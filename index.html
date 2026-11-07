@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
-<title>GREITERCODE - startujemy 10.11.2026!</title>
-<style>
-  * { box-sizing: border-box; }
-  html, body { margin: 0; height: 100%; }
-  body {
-    background: #000;
-    color: #fff;
-    font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: clamp(28px, 7vh, 80px);
-    width: 100%;
-  }
-  h1, p { margin: 0; font-weight: 400; line-height: 1.2; }
-
-  /* GREITERCODE! */
-  .nazwa {
-    color: #00c060;
-    font-size: clamp(40px, 7.4vw, 104px);
-  }
-
-  /* Startujemy 10.11.2026! */
-  .data {
-    font-size: clamp(30px, 5.6vw, 80px);
-    background: linear-gradient(90deg, #0095b0, #72d95a);
-    -webkit-background-clip: text; background-clip: text;
-    color: transparent;
-    margin-top: calc(clamp(28px, 7vh, 80px) * -0.6);
-  }
-
-  /* Serdecznie ZAPRASZAMY - napis "wyplywa" z ciemnosci */
-  .zaproszenie {
-    font-size: clamp(34px, 6.4vw, 92px);
-    background: linear-gradient(90deg, #14143a, #3636d8);
-    -webkit-background-clip: text; background-clip: text;
-    color: transparent;
-  }
-
-  /* Link do Discorda */
-  .discord {
-    display: inline-block;
-    padding: 14px 34px;
-    font-size: clamp(22px, 3.2vw, 40px);
-    color: #7a4dff;
-    border: 3px solid #7a4dff;
-    text-decoration: none;
-    transition: background .2s, transform .15s;
-  }
-  .discord:hover { background: rgba(122, 77, 255, .15); transform: scale(1.04); }
-  .discord:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>GREITERCODE - startujemy 10.11.2026!</title>
+    <style>
+        * { box-sizing: border-box; }
+        html, body { margin: 0; height: 100%; }
+        body {
+            background-color: #0d0d11;
+            color: #ffffff;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 24px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(20px, 5vh, 40px);
+            width: 100%;
+        }
+        h1, p { margin: 0; font-weight: 400; line-height: 1.2; }
+        .nazwa {
+            color: #00ffcc;
+            font-size: clamp(40px, 7.4vw, 104px);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+        }
+        .data {
+            font-size: clamp(24px, 4.5vw, 60px);
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .zaproszenie {
+            font-size: clamp(20px, 3.5vw, 45px);
+            color: #a0a0a5;
+        }
+        .discord {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 34px;
+            font-size: clamp(18px, 2.5vw, 28px);
+            color: #5865F2;
+            border: 3px solid #5865F2;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background .2s, transform .15s, color .2s;
+        }
+        .discord:hover { 
+            background: #5865F2; 
+            color: #fff;
+            transform: scale(1.05); 
+            box-shadow: 0 0 15px rgba(88, 101, 242, 0.4);
+        }
+    </style>
 </head>
 <body>
-  <main>
-    <div>
-      <h1 class="nazwa">GREITERCODE!</h1>
-    </div>
-    <p class="data">Startujemy 10.11.2026!</p>
-    <p class="zaproszenie">Serdecznie<br>ZAPRASZAMY</p>
-    <a class="discord" href="https://discord.gg/7KfZcMWw" target="_blank" rel="noopener">Nasz Discord!</a>
-  </main>
+    <main>
+        <h1 class="nazwa">GREITERCODE!</h1>
+        <p class="data">Startujemy 10.11.2026!</p>
+        <p class="zaproszenie">Serdecznie ZAPRASZAMY</p>
+        <a class="discord" href="https://discord.gg/7KfZcMWw" target="_blank" rel="noopener">Nasz Discord!</a>
+    </main>
 </body>
 </html>
